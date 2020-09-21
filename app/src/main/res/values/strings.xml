@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EcobeeLoginApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="ok">Ok</string>
+    <string name="click_here">Click here to load Cat</string>
+    <string name="welcome">Welcome...</string>
+    <string name="image_load_error">Image can\'t be loaded</string>
+    <string name="user_id_key">UserID</string>
+    <string name="user_name_key">UserName</string>
+    <string name="login_app_preference_key">login_app</string>
+    <string name="logout">Logout</string>
+    <string name="use_details_key">UserDetails</string>
+    <string name="fill_details_msg">Username and password cannot be empty</string>
+</resources>
