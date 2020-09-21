@@ -3,6 +3,5 @@
     <dimen name="margin_default">8dp</dimen>
     <dimen name="margin_high">32dp</dimen>
     <dimen name="textsize_medium">16sp</dimen>
-    <dimen name="textsize_default">8sp</dimen>
     <dimen name="image_min_height">250dp</dimen>
 </resources>

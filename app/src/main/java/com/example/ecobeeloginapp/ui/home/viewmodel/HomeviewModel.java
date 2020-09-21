@@ -15,16 +15,15 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 
 public class HomeviewModel extends ViewModel {
-    MutableLiveData<CatApiResponse> catApiResponseMutableLiveData = new MutableLiveData<>();
     public MutableLiveData<Boolean> progress = new MutableLiveData<>();
+    MutableLiveData<CatApiResponse> catApiResponseMutableLiveData = new MutableLiveData<>();
     private CompositeDisposable compositeDisposable;
 
     public HomeviewModel() {
         this.compositeDisposable = new CompositeDisposable();
     }
 
-    public void buttonClicked(View view)
-    {
+    public void buttonClicked(View view) {
         progress.setValue(true);
         fetchCatImage();
     }
@@ -33,7 +32,7 @@ public class HomeviewModel extends ViewModel {
         compositeDisposable.add(LoginRepository.getLoginRepository().getCatImageDetails()
                 .subscribeOn(ApplicationController.subscribeScheduler())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(this::onSuccess,this::onError));
+                .subscribe(this::onSuccess, this::onError));
     }
 
     private void onSuccess(List<CatApiResponse> catApiResponseList) {

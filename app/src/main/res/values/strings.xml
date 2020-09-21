@@ -13,5 +13,4 @@
     <string name="login_app_preference_key">login_app</string>
     <string name="logout">Logout</string>
     <string name="use_details_key">UserDetails</string>
-    <string name="fill_details_msg">Username and password cannot be empty</string>
 </resources>
